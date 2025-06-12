@@ -35,16 +35,15 @@ jobs:
       - name: Pre-install numpy (needed for scikit-surprise)
         run: |
           pip install numpy==1.24.3
-      
+
       - name: Install dependencies (excluding scikit-surprise)
         run: |
           grep -v scikit-surprise requirements.txt > temp-req.txt
           pip install -r temp-req.txt
-      
+
       - name: Install scikit-surprise manually
         run: |
           pip install --no-binary :all: scikit-surprise
-
 
       - name: Zip artifact for deployment
         run: zip release.zip ./* -r -x "venv/*"
