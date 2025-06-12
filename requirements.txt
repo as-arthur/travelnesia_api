@@ -1,0 +1,21 @@
+# Web Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Data Science & ML
+pandas==2.1.3
+numpy==1.24.3
+scikit-learn==1.3.2
+joblib==1.3.2
+
+# Surprise untuk Collaborative Filtering
+scikit-surprise==1.1.3
+
+# Validation
+pydantic==2.5.0
+
+# Optional: untuk deployment production
+gunicorn==21.2.0
+
+# Optional: untuk monitoring
+python-multipart==0.0.6
