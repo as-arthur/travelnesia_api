@@ -35,8 +35,9 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install wheel
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip setuptools wheel
+          pip install --use-pep517 -r requirements.txt
+
         
       # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
 
