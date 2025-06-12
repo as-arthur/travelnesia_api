@@ -8,9 +8,7 @@ numpy==1.24.3
 scikit-learn==1.3.2
 joblib==1.3.2
 
-# Surprise untuk Collaborative Filtering
-# scikit-surprise==1.1.3
-# git+https://github.com/NicolasHug/Surprise.git@v1.1.3
+
 
 
 # Validation
